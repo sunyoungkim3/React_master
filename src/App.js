@@ -16,7 +16,7 @@ function App() {
   return (
     <Father>
       <Box bgColor="teal" />
-      <Circle bgColor="whitesmoke" />
+      <Circle bgColor="tomato" />
     </Father>
   );
 }
