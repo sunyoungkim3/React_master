@@ -19,7 +19,7 @@ function App() {
   return (
     <Father>
       <BoxOne>
-        <Text> HELLO</Text>
+        <Text> Hello</Text>
       </BoxOne>
       <BoxTwo />
     </Father>
