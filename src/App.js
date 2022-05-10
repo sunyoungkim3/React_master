@@ -1,42 +1,24 @@
-import styled, { keyframes } from "styled-components";
-const Wrappered = styled.div`
-  display: flex;
+import styled from "styled-components";
+
+const Title = styled.h1`
+  color: ${(props) => props.theme.textColor};
 `;
 
-const rotationAnimation = keyframes`
-from {
-  transform:rotate(0edg);
-}
-to {
-  transform:rotate(360edg);
-}
-`;
-const Box = styled.div`
-  height: 200px;
-  width: 200px;
-  background-color: tomato;
-  display:flex;
+const Wrapper = styled.div`
+  display: flex;
+  height: 100vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
-  animation: ${rotationAnimation} 1s linear infinite;
-  span{
-    font-size: 20px;
-    &:hover{
-      font-size: 50px;
-    }
-    &:active{
-      opacity: 0;
-    }
-  }  
+  background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 function App() {
   return (
-    <Wrappered>
-      <Box>
-        <span>Hello</span>
-      </Box>
-    </Wrappered>
+    <Wrapper>
+      <Title>Hello</Title>
+    </Wrapper>
   );
 }
+
 export default App;
